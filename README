@@ -1,0 +1,31 @@
+BOGGLE SOLVER
+By Sam Kauffman
+2023
+
+Have you ever played a game of Boggle and thought, I wonder what words are in
+there that we missed? Wonder no more!
+
+This program solves the game Boggle by generating a list of all valid words for
+a given board. It works for standard Boggle (4x4), Big Boggle (5x5), and Super
+Big Boggle (6x6). The blank cube from Super Big Boggle can be interpreted as a
+block (as in the official rules) or as a wild (as in Scrabble).
+
+It works with whatever word list you provide. Two lists word_list.txt and
+word_list2.txt are included. These are lists I found on the Internet. I cannot
+confirm if either of them is actually the official word list used in Scrabble
+and Boggle. Both word lists contain all word forms (e.g., jump, jumps, jumped,
+jumping) and do not include proper nouns. word_list.txt has 178,691 words and
+is used by this program by default. word_list2.txt has 173,529 words.
+
+The program convert_word_list.py reads word_list.py, or whatever word list you
+provide, converts it to a format the Boggle solver understands, and saves it as
+converted_word_list.json. The program boggle.py then uses this converted word
+list.
+
+Run boggle.py to instantly see all the valid words for a given Boggle board.
+Select the board size, and then enter the cubes row by row as prompted. A cube
+may be:
+  - any single letter
+  - any pair of letters
+  - a block: #
+  - a wild: *
