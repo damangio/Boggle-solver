@@ -29,3 +29,10 @@ may be:
   - any pair of letters
   - a block: #
   - a wild: *
+
+If all you want to do is run the program, you only need to download
+convert_word_list.json and boggle.py. Put them in the same folder. You need to
+have Python 3 installed on your computer. In a command prompt window, go to that
+folder and type:
+
+python boggle.py
